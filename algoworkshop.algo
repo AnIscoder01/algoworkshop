@@ -1,0 +1,28 @@
+ALGORITHM  
+VAR
+    sentence : STRING
+    var words,longeur,vowel :INTEGER
+
+BEGIN
+    words=1
+    longeur=1
+    vowel=0
+    READ(sentence)
+
+    WHILE (sentence[i]!=".") DO
+        
+        SWITCH (sentence[i]) DO
+            case "A","E","I","O","U","Y","a","e","i","o","u","y" : vowel=vowel+1
+            case " " :words=words+1 
+            default : 
+        END_SWITCH
+        longeur=longeur+1   
+    END_WHILE
+
+    write("the length of the sentence :",longeur)
+    write("the number of words :"words)
+    write("The number of vowels in the sentence :",vowel)
+
+
+   
+END
