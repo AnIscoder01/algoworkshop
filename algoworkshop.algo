@@ -1,6 +1,6 @@
 ALGORITHM  
 VAR
-    sentence : STRING
+    var sentence : STRING
     var words,longeur,vowel :INTEGER
 
 BEGIN
