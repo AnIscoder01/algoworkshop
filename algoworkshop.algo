@@ -5,11 +5,11 @@ VAR
 
 BEGIN
     words=1
-    longeur=0
+    longeur=1
     vowel=0
     READ(sentence)
 
-    WHILE (sentence[longeur]!=".") DO
+    WHILE (sentence[longeur]<>".") DO
         
         SWITCH (sentence[i]) DO
             case "A","E","I","O","U","Y","a","e","i","o","u","y" : vowel=vowel+1
