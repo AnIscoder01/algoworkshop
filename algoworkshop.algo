@@ -11,7 +11,7 @@ BEGIN
 
     WHILE (sentence[longeur]<>".") DO
         
-        SWITCH (sentence[i]) DO
+        SWITCH (sentence[longeur]) DO
             case "A","E","I","O","U","Y","a","e","i","o","u","y" : vowel=vowel+1
             case " " :words=words+1 
             default : 
